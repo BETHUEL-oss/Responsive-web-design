@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">please fill this form with the required information.</p>
+  <form id="survey-form" action="/submit" method="post">
+      <label id="name-label" for="name">Enter your full names: <input id="name" name="name" type="text" placeholder="Enter your full name" required /></label>
+      <label id="email-label" for="email">Enter your Email: <input  id="email" name="email" type="email" placeholder="robertoppenheimer@gmail.com" required /></label>
+      <label id="number-label" for="number">Enter your age: <input  id="number" name="age" type="number" placeholder="28" min="17" max="80" /></label>
+      <label for="dropdown">Which University are you currently studying at?</label>
+      <select id="dropdown" name="university" required>
+        <option value="" disabled selected>(Select one)</option>
+        <option value="1">Multimedia University</option>
+        <option value="2">CUEA</option>
+        <option value="3">Cooperative University</option>
+        <option value="4">UON</option>
+        <option value="5">Other</option>
+      </select>
+      <label>What is your gender?</label>
+      <div class="radio">
+        <label><input name="gender" value="male" type="radio" required />Male</label>
+        <label><input name="gender" value="female" type="radio" required />Female</label>
+        <label><input name="gender" value="other" type="radio" required />Other</label>
+      </div>
+    
+      <label>What is your means of transport to school?</label>
+      <div class="checkbox">
+        <label><input type="checkbox" name="transport" value="public"> public</label>
+        <label><input type="checkbox" name="transport" value="private"> private</label>
+        <label><input type="checkbox" name="transport" value="other">other</label>
+      </div>
+      <label for="response">How is your experience to school with the means of transport you have chosen above?</label>
+      <textarea name="response" id="response" rows="5" placeholder="Enter your response here..."></textarea>
+      <button type="submit" id="submit">submit</button>
+  </form>
+</body>
+</html>
+
+

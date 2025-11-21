@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>Cybersecurity Fundamentals and Best Practices</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Common_Cyber_Threats">Common Cyber Threats</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Encryption_Fundamentals">Encryption Fundamentals</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Network_Security_Best_Practices">Network Security Best Practices</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Incident_Response_Procedures">Incident Response Procedures</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Emerging_Trends_In_Cybersecurity">Emerging Trends in Cybersecurity</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Conclusion_and_Resources">Conclusion and Resources</a>
+      </li>
+    </ul>
+  </nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>
+      <p>Cybersecurity encopasses the practices, technologies and processes designed to protect systems, networks, and data from digital attacks, unauthorized access and damage.</p>
+      <p>In an era where digital transformation accelerates, the stakes have never been higher: according to CompTIA's 2025 state of cybersecurity report, organizations must balance evolving threats with resource constraints, as cyber incidents cost the global economy trillions annually.</p>
+      <p>This documentation provides a foundational overview tailored to 2025's landscape where, AI-driven attacks, supply chain vulnerabilities, and quantum risks dominate headlines.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Common_Cyber_Threats">
+      <header>Common Cyber Threats</header>
+      <article>
+        <p>The threat landscape in 2025 is marked by sophistication and scale, with attackers leveraging AI for automation and nation-state actors targeting critical infranstracture.</p>
+        <p>Some of the prevalent threats and their mechanisms:</p>
+        <ul>
+          <li>Ransomware: Malware that encrypts data and demands payment for decryption</li>
+          <li>DDoS Attacks: Overwhelming networks with traffic to cause downtime</li>
+          <li>Phishing: Deceptive communications tricking users into revealing sensitibe info.</li>
+          <li>Supply Chain: Compromising third-party vendors to infiltrate targets</li>
+        </ul>
+        <p>Mitigation Tip: Regularly updates systems and conduct vulnerability scans using tools like Nessus or OpenVAS</p>
+      </article>
+  </section>
+  <section class="main-section" id="Encryption_Fundamentals">
+      <header>Encryption Fundamentals</header>
+      <article>
+          <p>Encryption is the cornerstone of data confidentiality, transforming readable data(plaintext) into an unreadable format(ciphertext) using algorithms and keys.</p>
+          <ul>
+            <li>Symmetric Encryption: Uses a single key for both encryption and decryption(e.g.,AES-256).Fast but key distribution is risky.</li>
+            <li>Asymmetric Encryption: Employs public-private key pairs(e.gRSA or ECC). Ideal for secure key exchange.</li>
+            <li>Hashing: One-way function like SHA-256 for integrity checks, not reversible</li>
+          </ul>
+      </article>
+  </section>
+  <section class="main-section" id="Network_Security_Best_Practices">
+    <header>Network Security Best Practices</header>
+    <article>
+      <p>Securing networks involves layered defenses to monitor, filter, and respond to traffic. CISA recommends a "defense-in-depth" approach for 2025 enviroments.</p>
+      <p>Core Components</p>
+      </ol>
+        <li>Firewalls: Stateful inspection(eg.,<code>pfSense</code>) to block unauthorized access</li>
+        <li>Intrusion Detection/Prevention System(IDS/IPS): Tools like <code>Snort</code> detect anomalies in real-time.</li>
+        <li>VPNS and Zero Trust Architecture: Verify every access request, regardless of origin-critical amid rising remote work</li>
+        <li>Segmentationo: Isolate networks(eg., VLANs)to limit breach spread.</li>
+      </ol>
+    </article>
+  </section>
+  <section class="main-section" id="Incident_Response_Procedures">
+    <header>Incident Response Procedures</header>
+    <article>
+      <p>When a breach occurs, a structured response minimizes damage.Follow the NIST framework: Preparation,Identification,Containment,Eradication,Recovery,Lessons Learned.</p>
+      <p>Step-by-Step Guide</p> 
+      <ol>
+        <li>Preparation: Develop an IR plan, train teams, and maintain backups(3-2-1 rule:3 copies,2 media types,1 offside).<li>
+        <li>Identification: Use tools like <code>Wireshark</code> for anomaly detection.</li>
+        <li>Containment: Isolate affected systems; short-term(e.g.,disconnect)vs.long-term(e.g.,rebuild).</li>
+        <li>Eradication and Recovery: Remove malware,restore form clean backups.</li>
+        <li>Post-Incident: Conduct root-cause analysis and update policies.</li>
+      </ol>
+      <p>In 2025, AI accelerates triage, but human oversight remains essential for complex nation-state incidents.</p>
+    </article>
+  </section>
+  <section class="main-section" id="Emerging_Trends_In_Cybersecurity">
+    <header>Emerging Trends in Cybersecurity</header>
+    <article>
+      <p>The field evolves rapidly,driven by technology and geopolitics.Key in 2025 trends include:</p>
+      <ul>
+        <li>AI Exploitation and Defense: Attackers use generative AI for phishing;defenders leverage ML for predictive analytics.</li>
+        <li>IoT and Cloud Vulnerabilities: Billions of devices expand attack surfaces;zero-trust models are non-negotiable.</li>
+        <li>Quantum-Resistance Crypto: Transitioning to algorithms like <code>CRYSTALS-Dilithium</code> amid hardware advandes.</li>
+        <li>Regulatory shifts: Enhanced global standards(e.g.,EU's <code>DORA</code>)emphasize supply chain audits</li>
+        <li>People-Centric Security: Training combats insider threats, with"security culture" as a board-level priority.</li>
+      </ul>
+    </article>
+  </section>
+  <section class="main-section" id="Conclusion_and_Resources">
+      <header>Conclusion and Resources</header>
+      <article>
+        <p>This documentation equips you with actionable insights for 2025's cybersecurity challenges. For deeper dives, consult CISA's best practices portal or the World Economic Forum's Global Cybersecurity Outlook. Stay vigilant-cybersecurity is a continuous journey. If customizing for your enviroment, condider tools like OWASP ZAP for testing.</p>
+      </article>
+  </section>
+</main>
+</body>
+</html>
